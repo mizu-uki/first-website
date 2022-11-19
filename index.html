@@ -35,6 +35,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/color/blue.css" rel="stylesheet" id="option-color">
 
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+
     <meta name="twitter:card" content="summary" /> <!--①-->
     <meta name="twitter:site" content="@-----" /> <!--②-->
     <meta property="og:url" content="https://www.------/" /> <!--③-->
@@ -155,12 +157,13 @@
 
                         <h2 class="">上田 瑞起</h2>
                         <!-- <h5 class="text-custom"> Web Marketer</h5> -->
-                        <div class="text-left">
-
-                            <p class="text-muted mt-4">東京都出身の25歳。</p>
-                            <p class="text-muted">
-                                現職はWebディレクターとしてサイト制作をサポートしてます。</p>
-                            <p class="text-muted mb-5">エンジニアリングに関心があり、日々勉強中です。</p>
+                        <div class="">
+                                <div class="text-left">
+                                    <p class="text-muted mt-4">東京都出身の25歳。</p>
+                                    <p class="text-muted">
+                                        現職はWebディレクターとしてサイト制作をサポートしてます。</p>
+                                    <p class="text-muted mb-5">エンジニアリングに関心があり、日々勉強中です。</p>
+                                </div>
                             <div>
                                 <ul class="mb-0 about-social list-inline mt-4">
                                     <!-- <li class="list-inline-item"><a href="#"><i class="mdi mdi-dribbble"></i></a></li> -->
@@ -663,7 +666,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-5">
+            <!-- <div class="row mt-5">
                 <div class="col-lg-12">
                     <div class="form-kerri contact_form">
                         <div id="message"></div>
@@ -707,7 +710,37 @@
                         </form>
                     </div>
                 </div>
-            </div>
+            </div> -->
+                        <!-- class, action, methodを変更しないでください -->
+            <form class="formrun" action="https://form.run/api/v1/r/quivb7mqdk26ocv8xxkbrptr" method="post">
+                <!-- ↓自由に要素を追加・編集することができます -->
+                <div class="form_content">
+                <label>お名前 ＜必須＞</label>
+                <input name="お名前" type="text">
+                </div>
+            
+                <div class="form_content">
+                <label>メールアドレス ＜必須＞</label>
+                <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+                <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+                </div>
+            
+                <div class="form_content">
+                <label>お問い合わせ ＜必須＞</label>
+                <textarea name="お問い合わせ" data-formrun-required></textarea>
+                <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+                </div>
+            
+            
+                <!-- ボット投稿をブロックするためのタグ -->
+                <div class="_formrun_gotcha">
+                <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+                <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+                <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+                </div>
+            
+                <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+            </form>
         </div>
     </section>
     <!-- END CONTACT -->
