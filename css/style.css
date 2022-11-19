@@ -397,13 +397,13 @@ button:focus {
 /*DEMO 16*/
 
 .wave_sec {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .wave_sec svg {
-  height: 180px;
+    height: 180px;
 }
 
 /*===========================
@@ -680,7 +680,8 @@ button{
     text-align: center;
     display: block;
     margin: 0 auto;
-    border-radius: 30px;}
+    border-radius: 30px;
+}
 
 
 /*======================
