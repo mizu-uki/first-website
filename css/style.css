@@ -671,7 +671,7 @@ form{
     margin-bottom: 18px;
 }
 
-button{
+.form-button{
     background-color: #37b8df;
     border: 1px solid #37b8df;
     color: white;
