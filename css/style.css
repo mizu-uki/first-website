@@ -762,6 +762,12 @@ form{
     .custom-img img{
         widows: 50%;
     }
+
+    form{
+        width: 280px;
+        margin: 50px auto 0;
+    }
+    
 }
 
 @media (max-width: 2560px) {
